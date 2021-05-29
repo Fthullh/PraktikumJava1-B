@@ -16,7 +16,7 @@ public class DataTypes{
  boolean tampan = true;
 
  System.out.print("Input Nama Depan :");
- namaDepan = cin.nextLine();
+ namaDepan = JOptionPane.showInputDialog("Input Nama Depan : ");
  System.out.print("Input Nama Tengah :");
  namaTengah = cin.nextLine();
  System.out.print("Input Nama Belakang :");
