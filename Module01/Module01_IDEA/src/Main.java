@@ -15,5 +15,20 @@ public class Main {
         String uniskaString = new String(uniskaChar);
         System.out.println(uniskaString);
 
+        String namalengkap = namaDepan + " " + namaTengah + " " + namaBelakang;
+        System.out.println(namalengkap.length());
+        System.out.println(namalengkap.indexOf("NIS"));
+        System.out.println(namalengkap.substring(5));
+        System.out.println(namalengkap.substring(5,12));
+        System.out.println(namalengkap.replace("Fat", "Nur"));
+        System.out.println(namalengkap.toUpperCase());
+        System.out.println(namalengkap.toLowerCase());
+        System.out.println(namalengkap.charAt(6));
+
+        String[] namaArray = namalengkap.split( " ");
+
+        for(String nama : namaArray) {
+            System.out.println(nama);
+        }
     }
 }
