@@ -20,11 +20,16 @@ public class MahasiswaBeraksi {
         System.out.println("Tanggal Lahir \t : " + simpleDateFormat.format(mahasiswa.tanggalLahir));
         System.out.println();
 
+        mahasiswa.tampilkanAtribut();
+        mahasiswa.menyapa();
+        System.out.println("Usiaku : " + mahasiswa.hitungUsia() + " tahun");
+
         Mahasiswa mahasiswa2 = new Mahasiswa();
         mahasiswa2.npm = "19710036";
         mahasiswa2.nama = "Nur Nela";
         mahasiswa2.tanggalLahir = simpleDateFormat.parse("26-12-2000");
 
+        System.out.println();
         System.out.println("Nama \t\t\t : " + mahasiswa2.nama);
         System.out.println("NPM \t\t\t : " + mahasiswa2.npm);
         System.out.println("Tanggal Lahir \t : " + simpleDateFormat.format(mahasiswa2.tanggalLahir));
