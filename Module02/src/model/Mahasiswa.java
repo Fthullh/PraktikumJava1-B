@@ -15,7 +15,7 @@ public class Mahasiswa {
     public Mahasiswa() {
     }
 
-    void  tampilkanAtribut(){
+    public void tampilkanAtribut(){
         System.out.println("Nama \t\t\t : " + this.nama);
         System.out.println("NPM \t\t\t : " + this.npm);
         System.out.println("Tanggal Lahir \t : " + SDF.format(this.tanggalLahir));
@@ -53,4 +53,27 @@ public class Mahasiswa {
         return selisihTahun;
     }
 
+    public String getNpm() {
+        return npm;
+    }
+
+    public void setNpm(String npm) {
+        this.npm = npm;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public Date getTanggalLahir() {
+        return tanggalLahir;
+    }
+
+    public void setTanggalLahir(Date tanggalLahir) {
+        this.tanggalLahir = tanggalLahir;
+    }
 }
